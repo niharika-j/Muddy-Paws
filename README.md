@@ -4,11 +4,11 @@ This project is an Angular website designed for a fictional client that sells ad
 
 ## Live link
 
-The website can be viewed online at 
+The website can be viewed online in this [Github Page](https://niharika-j.github.io/Muddy-Paws/).
 
 ## Extra features of this assignment
 
 - More than 3 pages created- Home, Search, Product Details, Contact Us.
 - Product detail page added for all products.
-- Product search bar and filters are included.
+- Product search bar and filters are functional.
 - Clicking on cat '25% off on cat harnesses' link on home page loads search page with 'cat' search automatically applied.
