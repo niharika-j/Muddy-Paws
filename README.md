@@ -11,4 +11,4 @@ The website can be viewed online in this [Github Page](https://niharika-j.github
 - More than 3 pages created- Home, Search, Product Details, Contact Us.
 - Product detail page added for all products.
 - Product search bar and filters are functional.
-- Clicking on cat '25% off on cat harnesses' link on home page loads search page with 'cat' search automatically applied.
+- Clicking on '25% off on cat harnesses' image on home page loads search page with 'cat' search automatically applied.
