@@ -1,0 +1,46 @@
+#contactContainer {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #contactMessage {
+        padding: 20px 0;
+        font-size: 24px;
+    }
+    #emailBox {
+        background-color: #705D56;
+        color: #F0F7F4;
+        height: 60vh;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .inputField {
+            padding: 10px 0;
+            label {
+                display: inline-block;
+                width: 5vw;
+            }
+            input {
+                width: 43vw;
+                font-size: 14px;
+            }
+        }
+        textarea {
+            height: 35vh;
+            width: 48vw;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        button {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            background-color: #70ABAF;
+            border-radius: 50%;
+            color: #F0F7F4;
+            margin-top: 15px;
+        }
+    }
+}

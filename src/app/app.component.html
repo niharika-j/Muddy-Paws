@@ -1,0 +1,62 @@
+<header>
+  <!--Logo and heading of website-->
+  <div id="titleContent" (click)="goToHome()">
+    <div id="logoContainer">
+      <img src="assets/images/logo.svg" alt="logo" />
+    </div>
+    <div id="titleContainer">
+      <h1>Muddy Paws</h1>
+    </div>
+  </div>
+
+  <!--Navbar-->
+  <div id="navLinks">
+    <nav>
+      <a routerLink="/home" routerLinkActive="activeLink">Home</a>
+      <a routerLink="/search" routerLinkActive="activeLink">Products</a>
+      <a routerLink="/contact" routerLinkActive="activeLink">Contact Us</a>
+    </nav>
+    <div id="navIcons">
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </div>
+</header>
+
+<!--Child pages-->
+<router-outlet></router-outlet>
+
+<!--Footer-->
+<footer>
+  <div class="footerModule">
+    <div class="footerColumn">
+      <h5>About Us</h5>
+      <a>Muddy Paws, Inc.</a>
+      <a>Blog</a>
+      <a>Careers</a>
+      <a>Policies</a>
+      <a>Investors</a>
+    </div>
+    <div class="footerColumn">
+      <h5>Help</h5>
+      <a>Shipping</a>
+      <a>Returns</a>
+      <a>Tracking Orders</a>
+      <a>Help Center</a>
+    </div>
+    <div class="footerColumn">
+      <h5>Customer Care</h5>
+      <a routerLink="/contact">Contact Us</a>
+      <a>Payment Methods</a>
+    </div>
+  </div>
+
+  <div class="footerModule">
+    <div class="footerColumn">
+      <h5>Find Us</h5>
+      <a><i class="fab fa-instagram"></i></a>
+      <a><i class="fab fa-facebook-f"></i></a>
+      <a><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>

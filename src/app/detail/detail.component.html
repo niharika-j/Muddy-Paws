@@ -1,0 +1,50 @@
+<div class="childPage">
+    <div id="detailsContainer">
+        <!--Product image- First column-->
+        <div id="productImage">
+            <img [src]="product?.imageUrl" [alt]="product?.name" />
+        </div>
+
+        <!--Product information- Second column-->
+        <div id="productInfo">
+            <h3>{{product?.name}}</h3>
+
+            <!--Rating-->
+            <div id="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+
+                <span id="votes">{{product?.votes}} votes</span>
+            </div>
+
+            <!--Product description-->
+            <p>
+                {{product?.description}}
+            </p>
+
+            <!--Size dropdown-->
+            <div id="size">
+                Size:
+                <select [(ngModel)]="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+
+            <!--Quantity Input-->
+            <div id="quantity">
+                Quantity: <input type="number" min="0" max="5" [(ngModel)]="quantity" />
+            </div>
+
+            <!--Final price and add to cart-->
+            <div id="finalActionContainer">
+                <div id="price">${{getFinalPrice()}}</div>
+                <button (click)="showAlert()" class="clickable">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

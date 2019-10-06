@@ -1,0 +1,32 @@
+<div class="childPage">
+    <div id="contactContainer">
+        <!--Message-->
+        <div id="contactMessage">We'd love to hear from you!</div>
+
+        <!--Email input-->
+        <div id="emailBox">
+            <!--Name-->
+            <div class="inputField">
+                <label>Name: </label><input type="text" placeholder="First and last name" />
+            </div>
+
+            <!--Email ID-->
+            <div class="inputField">
+                <label>Email ID: </label><input type="email" placeholder="Email address" />
+            </div>
+
+            <!--Subject-->
+            <div class="inputField">
+                    <label>Subject: </label><input type="text" placeholder="Brief subject" />
+            </div>
+
+            <!--Message-->
+            <div>
+                <textarea placeholder="Type your message here"></textarea>
+            </div>
+
+            <!--Send button-->
+            <button (click)="sentAlert()" class="clickable"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>

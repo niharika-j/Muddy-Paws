@@ -1,0 +1,48 @@
+<div class="childPage">
+    <div id="productSearchContainer">
+        <!--Filter column-->
+        <div id="filterColumn">
+            <h3 class="borderBottomGreen">Filter By</h3>
+            <!--Filter by price-->
+            <div class="filters borderBottomGreen">
+                <h3>Price</h3>
+
+                Between $ <input type="text" placeholder="min" [(ngModel)]="minPrice" (input)="filterProducts()"/> and $ <input type="text" placeholder="max" [(ngModel)]="maxPrice" (input)="filterProducts()"/>
+            </div>
+            <!--Filter by color-->
+            <div class="filters borderBottomGreen">
+                <h3>Color</h3>
+
+                <label><input type="checkbox" [(ngModel)]="red" (change)="filterProducts()" /> Red</label>
+                <label><input type="checkbox" [(ngModel)]="blue" (change)="filterProducts()" /> Blue</label>
+                <label><input type="checkbox" [(ngModel)]="white" (change)="filterProducts()" /> White</label>
+            </div>
+        </div>
+
+        <div id="searchAndListColumn">
+            <!--Search bar-->
+            <div>
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Type search query" [(ngModel)]="query" (input)="filterProducts()" />
+            </div>
+
+            <!--Search results information-->
+            <div id="resultInfo">
+                Showing {{productList.length}} result<span *ngIf="productList.length!=1">s</span><span *ngIf="query&&query.trim()!=''"> for "{{query}}"</span>
+            </div>
+
+            <!--Product list-->
+            <div id="productList">
+                <div *ngFor="let product of productList" class="product clickable" (click)="showProductDetails(product)">
+                    <div>
+                        <img [src]="product.imageUrl" width="300" />
+                    </div>
+                    <div class="productInfo">
+                        <div class="productName">{{product.name}}</div>
+                        <div class="productPrice">${{product.price}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

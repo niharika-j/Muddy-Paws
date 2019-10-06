@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #32292F;
+    background-color: #F0F7F4;
+    #titleContent {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        #logoContainer {
+            display: inline-block;
+            padding: 0 10px;
+            img {
+                height: 70px;
+            }
+        }
+        #titleContainer {
+            display: inline-block;
+            padding: 0 10px;
+            color: #70ABAF;
+            font-size: 20px;
+        }
+    }
+    #navLinks {
+        display: flex;
+        align-items: flex-end;
+        nav{
+            display: inline-block;
+            a {
+                text-decoration: none;
+                padding: 0 10px;
+                color: #8c7384;
+            }
+            .activeLink {
+                color: #32292F;
+            }
+            padding-right: 100px;
+        }
+        #navIcons {
+            display: inline-block;
+            i {
+                padding: 0 10px;
+                font-size: 20px;
+                color: #705D56;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #32292F;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #F0F7F4;
+    justify-content: space-between;
+    .footerModule {
+        display: flex;
+        .footerColumn {
+            padding: 0 20px;
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 5px 0;
+                cursor: pointer;
+                text-decoration: none;
+                color: #F0F7F4;
+                &:hover {
+                    text-decoration: underline;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+            h5 {
+                margin-block-start: 0;
+                margin-block-end: 10px;
+                font-weight: 500;
+                font-size: 16px;
+    
+            }
+        }
+    }
+}
