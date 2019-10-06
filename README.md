@@ -1,27 +1,14 @@
-# MuddyPaws
+# Muddy Paws
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+This project is an Angular website designed for a fictional client that sells adventure gear for pets. It is part of an assignment for an MHCI course at Carnegie Mellon University. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
-## Development server
+## Live link
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The website can be viewed online at 
 
-## Code scaffolding
+## Extra features of this assignment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- More than 3 pages created- Home, Search, Product Details, Contact Us.
+- Product detail page added for all products.
+- Product search bar and filters are included.
+- Clicking on cat '25% off on cat harnesses' link on home page loads search page with 'cat' search automatically applied.
